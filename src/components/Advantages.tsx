@@ -1,7 +1,9 @@
+import { FaCheckCircle, FaCogs, FaMedal } from "react-icons/fa";
+
 const points = [
-  { icon: "✅", title: "Fiable" },
-  { icon: "⚙️", title: "Fluide" },
-  { icon: "🏅", title: "Professionnel" },
+  { icon: FaCheckCircle, title: "Fiable" },
+  { icon: FaCogs, title: "Fluide" },
+  { icon: FaMedal, title: "Professionnel" },
 ];
 
 export default function Advantages() {
@@ -11,7 +13,9 @@ export default function Advantages() {
       <div className="max-w-5xl mx-auto grid gap-8 md:grid-cols-3">
         {points.map((p) => (
           <div key={p.title} className="text-center flex flex-col items-center gap-2">
-            <div className="text-4xl">{p.icon}</div>
+            <div className="text-4xl text-orange-500">
+              <p.icon />
+            </div>
             <p className="text-lg font-medium">{p.title}</p>
           </div>
         ))}
