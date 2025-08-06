@@ -26,7 +26,7 @@ export default function Services() {
             key={item.title}
             className="bg-white p-6 rounded shadow text-center flex flex-col items-center gap-2"
           >
-            <div className="text-4xl">{item.icon}</div>
+            <div className="text-4xl text-accent">{item.icon}</div>
             <h3 className="text-xl font-semibold">{item.title}</h3>
             <p className="text-sm">{item.description}</p>
           </div>

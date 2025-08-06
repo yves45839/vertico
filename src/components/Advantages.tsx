@@ -11,7 +11,7 @@ export default function Advantages() {
       <div className="max-w-5xl mx-auto grid gap-8 md:grid-cols-3">
         {points.map((p) => (
           <div key={p.title} className="text-center flex flex-col items-center gap-2">
-            <div className="text-4xl">{p.icon}</div>
+            <div className="text-4xl text-accent">{p.icon}</div>
             <p className="text-lg font-medium">{p.title}</p>
           </div>
         ))}

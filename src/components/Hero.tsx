@@ -9,7 +9,7 @@ export default function Hero() {
       </p>
       <Link
         href="#services"
-        className="bg-orange-500 text-white font-semibold px-6 py-3 rounded hover:bg-orange-600"
+        className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90"
       >
         Découvrir nos services
       </Link>
