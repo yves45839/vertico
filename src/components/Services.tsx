@@ -1,16 +1,18 @@
+import { FaTools, FaCouch, FaWater } from "react-icons/fa";
+
 const items = [
   {
-    icon: "🏗️",
+    icon: FaTools,
     title: "Gros œuvre",
     description: "Structures solides et durables pour tous vos projets",
   },
   {
-    icon: "🛋️",
+    icon: FaCouch,
     title: "Aménagement intérieur",
     description: "Espaces intérieurs fonctionnels et esthétiques",
   },
   {
-    icon: "💧",
+    icon: FaWater,
     title: "Hydraulique",
     description: "Pompes de forage et solutions hydrauliques",
   },
@@ -26,7 +28,9 @@ export default function Services() {
             key={item.title}
             className="bg-white p-6 rounded shadow text-center flex flex-col items-center gap-2"
           >
-            <div className="text-4xl">{item.icon}</div>
+            <div className="text-4xl text-orange-500">
+              <item.icon />
+            </div>
             <h3 className="text-xl font-semibold">{item.title}</h3>
             <p className="text-sm">{item.description}</p>
           </div>
