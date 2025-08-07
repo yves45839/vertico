@@ -28,7 +28,8 @@ export default function NavigationDots() {
           <Link
             key={item.href}
             href={item.href}
-            className="group flex items-center" aria-label={item.label}
+            className="group flex items-center"
+            aria-label={item.label}
           >
             <div className="rounded-lg border-2 border-[#D4AF37] bg-white/80 px-4 py-2 text-blue-900">
               {item.label}
