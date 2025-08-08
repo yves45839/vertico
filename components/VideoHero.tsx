@@ -13,7 +13,7 @@ export default function VideoHero({ onEnded }: VideoHeroProps) {
         muted
         playsInline
         onEnded={onEnded}
-        className="h-full w-full object-cover [@media(orientation:portrait)]:w-auto [@media(orientation:portrait)]:object-contain"
+        className="h-full w-full object-cover portrait:h-full portrait:w-auto [@media(orientation:portrait)]:w-auto [@media(orientation:portrait)]:object-contain"
       />
     </div>
   );
