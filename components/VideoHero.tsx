@@ -6,13 +6,15 @@ interface VideoHeroProps {
 
 export default function VideoHero({ onEnded }: VideoHeroProps) {
   return (
-    <video
-      src="/video/intro.mp4"
-      autoPlay
-      muted
-      playsInline
-      onEnded={onEnded}
-      className="h-full w-full object-cover"
-    />
+    <div className="flex h-full w-full items-center justify-center overflow-hidden">
+      <video
+        src="/video/intro.mp4"
+        autoPlay
+        muted
+        playsInline
+        onEnded={onEnded}
+        className="h-full w-full object-cover [@media(orientation:portrait)]:w-auto [@media(orientation:portrait)]:object-contain"
+      />
+    </div>
   );
 }
