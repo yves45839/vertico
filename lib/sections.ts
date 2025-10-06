@@ -1,8 +1,17 @@
 import { cache } from "react";
-import prisma from "./prisma";
+import { fallbackSections, type SectionWithServices } from "./sections-fallback";
 
-export const getAllSections = cache(async () => {
-  const sections = await prisma.section.findMany({
+const hasDatabaseUrl = Boolean(process.env.DATABASE_URL);
+
+async function getPrisma() {
+  const { default: prisma } = await import("./prisma");
+  return prisma;
+}
+
+async function fetchSectionsFromDatabase() {
+  const prisma = await getPrisma();
+
+  return prisma.section.findMany({
     orderBy: { position: "asc" },
     include: {
       services: {
@@ -10,12 +19,20 @@ export const getAllSections = cache(async () => {
       },
     },
   });
+}
 
-  return sections;
+export const getAllSections = cache(async (): Promise<SectionWithServices[]> => {
+  if (!hasDatabaseUrl) {
+    return fallbackSections;
+  }
+
+  return fetchSectionsFromDatabase();
 });
 
-export const getSectionBySlug = cache(async (slug: string) => {
-  const section = await prisma.section.findUnique({
+async function fetchSectionBySlugFromDatabase(slug: string) {
+  const prisma = await getPrisma();
+
+  return prisma.section.findUnique({
     where: { slug },
     include: {
       services: {
@@ -23,6 +40,12 @@ export const getSectionBySlug = cache(async (slug: string) => {
       },
     },
   });
+}
 
-  return section;
+export const getSectionBySlug = cache(async (slug: string) => {
+  if (!hasDatabaseUrl) {
+    return fallbackSections.find((section) => section.slug === slug) ?? null;
+  }
+
+  return fetchSectionBySlugFromDatabase(slug);
 });
