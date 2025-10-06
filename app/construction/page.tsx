@@ -42,10 +42,7 @@ export default async function ConstructionPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-[#1b1008]/80 via-[#24140a]/85 to-[#120905]/90"
-          aria-hidden="true"
-        />
+        <div className="construction-gradient absolute inset-0 opacity-95" aria-hidden="true" />
       </div>
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">

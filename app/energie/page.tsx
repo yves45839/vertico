@@ -42,10 +42,7 @@ export default async function EnergyPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-[#120a05]/70 via-[#1d1309]/80 to-[#0b0503]/85"
-          aria-hidden="true"
-        />
+        <div className="energy-gradient absolute inset-0 opacity-95" aria-hidden="true" />
       </div>
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
