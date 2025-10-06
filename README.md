@@ -20,17 +20,40 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Planifier une interface « électro » sur une page unique
 
-To learn more about Next.js, take a look at the following resources:
+Pour concevoir une page immersive avec un univers électro futuriste, voici un déroulé d'étapes et de conseils pratiques :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Définir l'identité visuelle**
+   - Construire un moodboard (Pinterest, Behance, Midjourney) qui rassemble typographies géométriques, éléments néon, motifs digitaux et animations lumineuses.
+   - Déterminer une palette sombre (bleu nuit, anthracite) rehaussée d'accents cyan, magenta ou violet électrique pour les éléments interactifs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Structurer la page**
+   - Limiter le contenu à une page avec une navigation interne (ancre ou scroll fluide) vers des sections claires : hero, services/cartes, témoignages, call-to-action.
+   - Utiliser une grille responsive (12 colonnes) pour maîtriser alignements et marges, tout en prévoyant de larges zones négatives pour faire respirer les effets lumineux.
 
-## Deploy on Vercel
+3. **Créer les cartes dynamiques**
+   - Pour chaque carte (services, offres, projets), combiner un fond semi-transparent (`rgba(15, 15, 35, 0.75)`) avec un effet verre dépoli (`backdrop-filter: blur(12px)`).
+   - Ajouter des bordures animées (gradients animés avec `@keyframes`, `border-image` ou pseudo-éléments) et une légère lueur externe (`box-shadow` colorée) afin d'évoquer un circuit imprimé vivant.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Ajouter les effets électro**
+   - Intégrer des transitions douces (`transition: transform 250ms ease, box-shadow 250ms ease`) et des micro-interactions (élévation au survol, lueur pulsée).
+   - Utiliser des lignes ou particules en arrière-plan avec un canvas léger (Three.js, particles.js) ou des SVG animés (GSAP, `stroke-dashoffset`) pour renforcer l'immersion sans nuire aux performances.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **Travailler la typographie et les icônes**
+   - Choisir des polices condensées et techniques (ex. « Orbitron », « Michroma ») pour les titres, associées à une police lisible (ex. « Inter », « Geist ») pour le corps de texte.
+   - Employer des icônes minimalistes au trait fin, idéalement animées en vectoriel pour accompagner les cartes.
+
+6. **Optimiser l'expérience utilisateur**
+   - Veiller au contraste (WCAG AA) en vérifiant les couleurs primaires contre le fond sombre.
+   - Prévoir un mode réduit des animations (respect de `prefers-reduced-motion`) et optimiser les assets (compressions, lazy loading) pour maintenir la fluidité.
+
+7. **Prototyper puis implémenter**
+   - Réaliser une maquette haute fidélité (Figma, Framer) afin de valider interactions et animations avant de passer au code.
+   - Implémenter progressivement : structure HTML/JSX, styles globaux, animations, puis tests sur différents navigateurs/appareils.
+
+8. **Peaufiner et tester**
+   - Ajuster la direction artistique avec un système de tokens (couleurs, ombres, rayons) pour garder la cohérence.
+   - Tester la performance (Lighthouse), l’accessibilité (axe DevTools) et la compatibilité mobile/tablette avant livraison.
+
+Ce cadre vous permet d'avancer méthodiquement tout en laissant de la place à la créativité pour un rendu électro élégant et moderne.
