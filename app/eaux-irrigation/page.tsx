@@ -42,7 +42,7 @@ export default async function WaterPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#061223]/70 via-[#0b1f33]/75 to-[#061223]/80" aria-hidden="true" />
+        <div className="water-gradient absolute inset-0 opacity-95" aria-hidden="true" />
       </div>
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-6">
