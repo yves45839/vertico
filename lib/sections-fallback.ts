@@ -46,7 +46,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Etudes techniques, modelisation BIM, permis de construire.",
         body:
           "Esquisses, plans d'execution et simulations 3D pour garantir la faisabilite et l'optimisation budgetaire de chaque projet.",
-        imageUrl: null,
+        imageUrl: "/images/construction-architectural.svg",
         highlights: ["Plans sur mesure", "Suivi administratif", "Coordination BET"],
         order: 0,
       },
@@ -55,7 +55,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Fondations, maconnerie, structures porteuses, dallages industriels.",
         body:
           "Maitrise du beton arme et des structures metalliques pour assurer stabilite et longevite des ouvrages.",
-        imageUrl: null,
+        imageUrl: "/images/construction-structure.svg",
         highlights: ["Fondations profondes", "Structures beton", "Charpentes metalliques"],
         order: 1,
       },
@@ -64,7 +64,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Cloisons, menuiseries, revetements, peinture decorative.",
         body:
           "Finitions soignees avec cloisons acoustiques, sols techniques, luminaires et traitement decoratif complet.",
-        imageUrl: null,
+        imageUrl: "/images/construction-finish.svg",
         highlights: ["Revetements premium", "Cloisons techniques", "Decoration sur mesure"],
         order: 2,
       },
@@ -84,7 +84,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Stations de pompage, filtration, stockage de 2 000 a 19 000 L.",
         body:
           "Reseaux complets incluant traitement UV, chloration et monitoring IoT pour garantir une qualite d'eau constante.",
-        imageUrl: null,
+        imageUrl: "/images/water-potable.svg",
         highlights: ["Stations sur mesure", "Monitoring distant", "Maintenance preventive"],
         order: 0,
       },
@@ -93,7 +93,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Goutte-a-goutte, aspersion, pivot central et ferti-irrigation.",
         body:
           "Dimensionnement hydraulique, automatisation par vannes intelligentes et integration d'outils d'aide a la decision agronomique.",
-        imageUrl: null,
+        imageUrl: "/images/water-irrigation.svg",
         highlights: ["Optimisation hydrique", "Pilotage mobile", "Ferti-irrigation"],
         order: 1,
       },
@@ -102,7 +102,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Solutions combinant pompage solaire, stockage et irrigation.",
         body:
           "Systemes cle en main avec panneaux solaires, batteries et supervision pour reduire les couts d'exploitation.",
-        imageUrl: null,
+        imageUrl: "/images/water-hybrid.svg",
         highlights: ["Pompage solaire", "Autonomie energetique", "Supervision cloud"],
         order: 2,
       },
@@ -122,7 +122,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Autoconsommation, stockage lithium, supervision mobile.",
         body:
           "Kits modulaires avec batteries intelligentes et suivi en temps reel pour maximiser votre autonomie.",
-        imageUrl: null,
+        imageUrl: "/images/energy-residentiel.svg",
         highlights: ["Batteries lithium", "Monitoring energie", "Maintenance connectee"],
         order: 0,
       },
@@ -131,7 +131,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Etudes BT/MT, distribution, protection et normes locales.",
         body:
           "Conception et cablage de tableaux automatises, coffrets de protection, ATS et armoires moteurs avec documentation complete.",
-        imageUrl: null,
+        imageUrl: "/images/energy-tableaux.svg",
         highlights: ["Norme NF C 15-100", "Automates industriels", "Tests et mise en service"],
         order: 1,
       },
@@ -140,7 +140,7 @@ export const fallbackSections: SectionWithServices[] = [
         summary: "Combiner pompes, forage et solaire pour les zones isolees.",
         body:
           "Ingenierie de systemes hybrides integrant variateurs, generateurs et monitoring pour assurer une disponibilite 24/7.",
-        imageUrl: null,
+        imageUrl: "/images/energy-hybride.svg",
         highlights: ["Hybridation diesel-solaire", "Pilotage a distance", "Garanties de performance"],
         order: 2,
       },

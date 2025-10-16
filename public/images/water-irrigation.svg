@@ -1,0 +1,59 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="32" fill="url(#paint0_radial)"/>
+  <g filter="url(#filter0_f)">
+    <path d="M120 320C120 268.294 162.294 226 214 226H426C477.706 226 520 268.294 520 320V352C520 369.673 505.673 384 488 384H152C134.327 384 120 369.673 120 352V320Z" fill="url(#paint1_linear)"/>
+  </g>
+  <g filter="url(#filter1_f)">
+    <path d="M168 160C168 135.699 187.699 116 212 116H428C452.301 116 472 135.699 472 160V188C472 212.301 452.301 232 428 232H212C187.699 232 168 212.301 168 188V160Z" fill="url(#paint2_linear)"/>
+  </g>
+  <path d="M156 272H484" stroke="url(#paint3_linear)" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <path d="M196 232H444" stroke="url(#paint4_linear)" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+  <path d="M232 194H408" stroke="url(#paint5_linear)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+  <path d="M168 306C192 320 232 328 280 328C360 328 408 304 440 272" stroke="url(#paint6_linear)" stroke-width="14" stroke-linecap="round" opacity="0.6"/>
+  <path d="M210 344C236 356 268 362 304 362C372 362 420 342 456 314" stroke="url(#paint7_linear)" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+  <defs>
+    <filter id="filter0_f" x="72" y="178" width="496" height="254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="24" result="effect1_foregroundBlur"/>
+    </filter>
+    <filter id="filter1_f" x="120" y="68" width="400" height="212" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="24" result="effect1_foregroundBlur"/>
+    </filter>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140 84) rotate(28) scale(640 560)">
+      <stop stop-color="#2DD1FF" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#041423"/>
+      <stop offset="1" stop-color="#020A16"/>
+    </radialGradient>
+    <linearGradient id="paint1_linear" x1="120" y1="384" x2="520" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55F6FF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#26C6FF" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="168" y1="232" x2="472" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EF7FF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#42DDFF" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="paint3_linear" x1="156" y1="272" x2="484" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DF1FF"/>
+      <stop offset="1" stop-color="#22BAFD" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear" x1="196" y1="232" x2="444" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5CEAFF"/>
+      <stop offset="1" stop-color="#1FB3F9" stop-opacity="0.58"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear" x1="232" y1="194" x2="408" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4AE0FF"/>
+      <stop offset="1" stop-color="#1AA9F5" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="paint6_linear" x1="168" y1="328" x2="440" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AF4FF"/>
+      <stop offset="1" stop-color="#2BC5FF" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="paint7_linear" x1="210" y1="362" x2="456" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8DF6FF"/>
+      <stop offset="1" stop-color="#38CDFE" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+</svg>
