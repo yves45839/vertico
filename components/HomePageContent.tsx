@@ -275,7 +275,7 @@ export default function HomePageContent({ sections }: HomePageContentProps) {
               </div>
               <div>
                 <p className="font-medium text-orange-50">Adresse</p>
-                <p className="mt-1 text-orange-100/80">Abidjan, Côte d'Ivoire</p>
+                <p className="mt-1 text-orange-100/80">Abidjan, Côte d&apos;Ivoire</p>
               </div>
             </div>
           </div>
