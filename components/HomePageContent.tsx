@@ -247,6 +247,39 @@ export default function HomePageContent({ sections }: HomePageContentProps) {
         {sections.map((section) => (
           <SectionShowcase key={section.slug} section={section} />
         ))}
+
+        <footer className="relative bg-[#040507] text-orange-50">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-16 md:flex-row md:items-start md:justify-between">
+            <div>
+              <h2 className="text-2xl font-semibold">Contact</h2>
+              <p className="mt-2 text-sm text-orange-100/80">Restons en contact pour vos projets.</p>
+            </div>
+            <div className="grid gap-4 text-sm text-orange-100/90 md:grid-cols-2">
+              <div>
+                <p className="font-medium text-orange-50">Email</p>
+                <a href="mailto:info@label-ci.com" className="mt-1 block text-orange-100/80 hover:text-orange-50">
+                  info@label-ci.com
+                </a>
+              </div>
+              <div>
+                <p className="font-medium text-orange-50">Téléphone</p>
+                <a href="tel:+2250788899965" className="mt-1 block text-orange-100/80 hover:text-orange-50">
+                  +225 07 888 999 65
+                </a>
+              </div>
+              <div>
+                <p className="font-medium text-orange-50">Fixe</p>
+                <a href="tel:+2252721585677" className="mt-1 block text-orange-100/80 hover:text-orange-50">
+                  +225 27 21 58 56 77
+                </a>
+              </div>
+              <div>
+                <p className="font-medium text-orange-50">Adresse</p>
+                <p className="mt-1 text-orange-100/80">Abidjan, Côte d'Ivoire</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
   );
